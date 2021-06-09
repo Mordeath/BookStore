@@ -420,3 +420,6 @@ FodyWeavers.xsd
 *.tlog
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,dotnetcore,visualstudiocode,angular
+
+# ConnectionString
+appsettings.json
