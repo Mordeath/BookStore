@@ -1,8 +1,9 @@
-﻿using BookStare.Domain.Models;
+﻿using BookStare.Domain.Interfaces;
+using BookStare.Domain.Models;
 
 namespace BookStore.Infrastructure.Repositories
 {
-    public class CategoryRepository : Repository<Category>
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         public CategoryRepository(Context.BookStoreDbContext db) : base(db)
         {

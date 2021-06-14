@@ -19,7 +19,7 @@ namespace BookStore.Infrastructure.Mappings
             
             builder.Property(x => x.Description).IsRequired(false).HasColumnType("Varchar(Max)");
 
-            builder.Property(x => x.Vakue).IsRequired();
+            builder.Property(x => x.Value).IsRequired();
 
             builder.Property(x => x.PublishDate).IsRequired();
 

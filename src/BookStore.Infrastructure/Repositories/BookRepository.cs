@@ -11,7 +11,7 @@ namespace BookStore.Infrastructure.Repositories
 {
     public class BookRepository : Repository<Book>, IBookRepository
     {
-        protected BookRepository(Context.BookStoreDbContext db) : base(db) { }
+        public BookRepository(Context.BookStoreDbContext db) : base(db) { }
 
         public override async Task<List<Book>> GetAll()
         {
