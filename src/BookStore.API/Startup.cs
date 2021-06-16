@@ -65,7 +65,7 @@ namespace BookStore.API
             }
 
             app.UseSwagger();
-            app.UseSwaggerUI(q => q.SwaggerEndpoint("/swagger/v1/swagger.jsojn", "v1"));
+            app.UseSwaggerUI(q => q.SwaggerEndpoint("/swagger/v1/swagger.json", "v1"));
 
             app.UseHttpsRedirection();
 
