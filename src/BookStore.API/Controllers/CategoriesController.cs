@@ -36,7 +36,7 @@ namespace BookStore.API.Controllers
             {
                 return NotFound();
             }
-            return Ok(_mapper.Map<IEnumerable<CategoryResultDto>>(categotyByID);
+            return Ok(_mapper.Map<IEnumerable<CategoryResultDto>>(categotyByID));
         }
 
         [HttpPost]
@@ -83,7 +83,7 @@ namespace BookStore.API.Controllers
             }
             return Ok();
         }
-        [Route("search/{category")]
+        [Route("search/{category}")]
         [HttpGet]
         public async Task<ActionResult<List<Category>>> Search(string category)
         {
